@@ -1,0 +1,100 @@
+/** @format */
+* {
+    background-color: bisque;
+}
+
+nav {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  border: 1px;
+  padding: 1px;
+  background-color: gold;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.navbar {
+    overflow: auto;
+}
+
+nav:target {
+
+  transform: translateY(0);
+
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav > ul a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 2px;
+  margin: 2px;
+  color: black;
+  display: block;
+}
+
+nav > ul a:link {
+  color: black;
+  background-color: gold;
+}
+
+nav > ul a:hover {
+  color: gold;
+  background-color: black;
+}
+
+@media screen and (min-width: 700px) {
+
+  nav {
+    position: static;
+    height: auto;
+    transform: translateY(0);
+    width: 100%;
+  }
+  .hamburger,
+  .close {
+    display: none;
+  }
+  nav li {
+    display: inline-block;
+  }
+
+}
+
+img {
+    padding-top: 25px;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    font-size: large;
+}
+
+.close {
+    top:0;
+    left: 0;
+}
+
+.twitter {
+    display: block;
+    text-align: left;
+    position: relative;
+    font-size: 50px;
+}
